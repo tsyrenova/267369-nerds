@@ -5,8 +5,164 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+      <header class="main.header">
+          <nav class="main-navigation">
+              <a class="main.header-logo">
+                  <img src="img/README" width="250" height="150" alt="Логотоип Нёрдс">
+              </a>
+              <ul class="site-navigation">
+                  <li><a href="studio.html">СТУДИЯ</a></li>
+                  <li><a href="clients.html">КЛИЕНТЫ</a></li>
+                  <li><a href="magazine.html">МАГАЗИН</a></li>
+                  <li><a href="contacs.html">КОНТАКТЫ</a></li>
+              </ul> 
+              <ul class="basket-navigation">
+                  <li class="basket.html">КОРЗИНА</li>
+              </ul>
+          </nav>
+      </header>
+    <main class="container"> 
+        <h1 class="visually-hidden">Студия "Нёрдс"</h1>
+        <section class="sliders">
+            <div class="slider">
+                <p class="slider-text-title">Долго, дорого, скрупулезно</p>
+                <p class="slider-text-normal">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a href="#">
+                    <p class="slider-text-button">УЗНАТЬ БОЛЬШЕ</p>
+                </a>
+                <!-- Картинка на слайдер будет через CSS -->
+                <span class="slider-button"></span>
+            </div>
+            <div class="slider">
+                <p class="slider-text-title">Любим математику как никто другой</p>
+                <p class="slider-text-normal">Никакого креатива только математические формулы для расчета идеальных пропорций.</p>
+                <a href="#">
+                    <p class="slider-text-button">УЗНАТЬ БОЛЬШЕ</p>
+                    <!-- Картинка на слайдер будет через CSS -->
+                </a>
+                <span class="slider-button"></span>
+            </div>
+            <div class="slider">
+                <p class="slider-text-title">Только ночь, только хардкор</p>
+                <p class="slider-text-normal">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a href="#">
+                    <p class="slider-text-button">УЗНАТЬ БОЛЬШЕ</p>
+                </a>
+                <!-- Картинка на слайдер будет через CSS -->
+                <span class="slider-button"></span>
+            </div>        
+        </section>
+        
+        <section class="service">
+            <h2 class="visually-hidden">Услуги</h2>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <img src="img/sites.jpeg" width="100" height="100" alt="Сайты">
+                    <h3>ВЕБ-САЙТЫ</h3>
+                    <p>Мир никогда не будет преждним после того как увидит ваш сайт!</p>
+                    <a href="#">
+                    <p class="slider-text-button">Заказать</p>
+                    </a>
+                </li>
+                <li class="feature-item">
+                    <img src="img/apps.jpeg" width="100" height="100" alt="Приложения">
+                    <h3>ПРИЛОЖЕНИЯ</h3>
+                    <p>Покорите топ-10 приложений в AppStore и Google play!</p>
+                    <a href="#">
+                    <p class="slider-text-button">Заказать</p>
+                    </a>
+                </li>
+                <li class="feature-item">
+                    <img src="img/presentations.jpeg" width="100" height="100" alt="Презентации">
+                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                    <a href="#">
+                    <p class="slider-text-button">Заказать</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="about company">
+            <h2 class="visually-hidden">О нас</h2>
+            <div class="about">
+                <p class="about-text-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+                <p class="slider-text-normal">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            </div>
+            <div class="capabilities">
+                <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
+                <ul class="capabilities-list">
+                    <li class="capabilitie-item">Веб-сайтов любойсложности</li>
+                    <li class="capabilitie-item">Мобильных приложений для iOS и Android</li>
+                    <li class="capabilitie-item">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>  
+            </div>
+            <div class="advantages">
+                <img src="img/htmlacademy.advantages" width="30" height="30">
+                <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
+                <table>
+                    <tr>
+                        <td>146%</td>
+                        <td>Уровень самоотдачи</td>
+                    </tr>
+                    <tr>
+                        <td>100%</td>
+                        <td>Соблюдение сроков</td>
+                    </tr>
+                    <tr>
+                        <td>50%</td>
+                        <td>Минимальная пердоплата</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
+          <a href="https://htmlacademy.ru/">
+              <img src="img/htmlacademy.jpeg" width="50" height="50" alt="html академия">
+          </a>
+          <a href="http://barbershopborodinsky.ru/" alt="barbershop borodinski">
+              <img src="img/barbershopborodinsky.jpeg" width="50" height="50" alt="барбершоп бородинский">
+          </a>
+          <a href="https://glassespink.ru" alt="ОчкиPink">
+            <img src="img/glassespink.jpeg" width="50" height="50" alt=" Очки pink">
+          </a>
+            <a href="https://mishkatoy.ru" alt="мишкаигрущшки">
+            <img src="img/mishkatoy.jpeg" width="50" height="50" alt="mishka игрушка">
+          </a>
+        </section>
+        
+        <section class="map">
+            <img src="img/map.jpeg" width="70" height="70" alt="карта">
+                <div class="adress">
+                <p class="adress-text-title">NЁRDS DESIGN STUDIO</p>
+                <p class="adress-text-normal">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+                <p class="adress-text-normal">тел. +7(812) 275-75-75</p>    
+                <a href="#">
+                    <p class="adress-text-button">НАПИШИТЕ НАМ</p>
+                </a>
+                <!-- Картинка на слайдер будет через CSS -->
+                </div>
+        </section>        
+    </main>
+      <footer class="main-footer">
+          <div class="social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="sales">
+                <p class="sales-text-title">Давайте дружить, это выгодно!</p>
+                <p class="sales-text-normal">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      </footer>
+      
+      <section class="modal modal-write">
+      <h2>Напишите нам</h2>
+      <!-- Здесь будет форма -->
+      
+    </section>
   </body>
 </html>
