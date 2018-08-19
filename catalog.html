@@ -6,10 +6,11 @@
   </head>
   <body>
       <header class="main.header">
-          <nav class="main-navigation">
-              <a class="main.header-logo">
+          <a class="main.header-logo" href="index.html">
                   <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотоип Нёрдс">
-              </a>
+          </a>
+          <nav class="main-navigation">
+              
               <ul class="site-navigation">
                   <li><a href="studio.html">Студия</a></li>
                   <li><a href="clients.html">Клиенты</a></li>
@@ -29,7 +30,78 @@
           
         <section class="filters">
               <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->              
+            <form oninput="pricedown.value=price.value">
+                <fieldset>
+                    <legend>Стоимость:</legend>  
+                    <div>
+                        <input type="range" min="0" max="15000" id="price" step="1">
+                    </div>
+                    от
+                    <output name="pricedown">0</output>
+                    до
+                    15000
+                </fieldset>
+                <fieldset>
+                <legend>Сетка:</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="adaptive" id="filter-adaptive" checked>
+                        <label for="filter-adaptive">
+                            Адаптивная
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fixed" id="filter-fixed">
+                        <label for="filter-fixed">
+                            Фиксированная
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rubber" id="filter-rubber">
+                        <label for="filter-rubber">
+                            Резиновая
+                        </label>
+                    </li>
+                </ul>    
+                </fieldset>
+                <fieldset>
+                <legend>Особенности:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="slider" id="filter-slider" checked>
+                        <label for="filter-slider">
+                            Слайдер
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="benefit" id="filter-benefit">
+                        <label for="filter-benefit">
+                            Блок преимуществ
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="news" id="filter-news" checked>
+                        <label for="filter-news">
+                            Новости
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="gallery" id="filter-gallery">
+                        <label for="filter-gallery">
+                            Галерея
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="basket" id="filter-basket">
+                        <label for="filter-basket">
+                            Корзина
+                        </label>
+                    </li>
+                </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        
         </section>
           
         <section class="sorting">
