@@ -103,16 +103,16 @@
         
         <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
-          <a class="htmlacademy-partners" href="https://htmlacademy.ru/">
+          <a class="partners-logo" href="https://htmlacademy.ru/">
               <img src="img/logo-htmlacademy.png" width="260" height="180" alt="html академия">
           </a>
-          <a href="http://barbershopborodinsky.ru/">
+          <a class="partners-logo" href="http://barbershop-borodinski.webflow.io/">
               <img src="img/logo-borodinski.png" width="260" height="180" alt="барбершоп бородинский">
           </a>
-          <a href="https://glassespink.ru">
+          <a class="partners-logo" href="http://anna-v.github.io/pink/">
             <img src="img/logo-pink.png" width="260" height="180" alt=" Очки pink">
           </a>
-            <a href="https://mishkatoy.ru">
+            <a class="partners-logo" href="https://tyalomishka.herokuapp.com/">
             <img src="img/logo_mishka.png" width="260" height="180" alt="mishka игрушка">
           </a>
         </section>
@@ -127,21 +127,21 @@
                 <!-- Картинка на слайдер будет через CSS -->
                 </div>
         </section> 
-        <section class="modal modal-write">
+        <section class="modal-write">
             <h2>Напишите нам</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
-                <div class="name">
-                    <label for="name-field">Ваше имя:</label>
+                <p class="modal-item">
+                    <label for="name-field"><span class="name">Ваше имя:</span></label>
                     <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-                </div>
-                <div class="email">
-                    <label for="email-field">Ваш e-mail:</label>
+                </p>
+                <p class="modal-item">
+                    <label for="email-field"><span class="email">Ваш e-mail:</span></label>
                     <input type="text" name="email" id="email-field" placeholder="email@example.com">
-                </div>
-                <div class="message">
-                    <label for="message-field">Текст письма:</label>
-                    <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
-                </div>
+                </p>
+                <p class="modal-item">
+                    <label for="message-field"><span class="text">Текст письма:</span></label>
+                    <input type="text" name="message" id="message-field" placeholder="В свободной форме">
+                </p>
             </form>
         </section>       
     </main>

@@ -129,6 +129,27 @@ a {
     text-align: left;
     color: #283136;
 }
+.service-icon {
+  border: none;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 146px;
+}
+
+.service-icon-notebook {
+  background-image: url("../img/notebook.jpg");
+  background-color: #fb565a;
+}
+
+.service-icon-phone {
+  background-image: url("../img/phone.jpg");
+  background-color: #00ca74;
+}
+
+.service-icon-desk {
+  background-image: url("../img/desk.jpg");
+  background-color: #efc84a;
+}
 .service-button1,
 .service-button2,
 .service-button3 {
@@ -226,18 +247,15 @@ td.about-table-column1 {
     width: 100px;
     padding: 40px 15px;
 }
-.partners a{
-    filter: alpha(Opacity=20);
-    opacity: 0.20;  
+.partners-logo {
+    opacity: 0.20; 
 }
-.partners:hover a,
-.partners:focus a{
-  filter: alpha(Opacity=1);
+.partners-logo:hover,
+.partners-logo:focus {
     opacity: 1;
 }
-.partners:active a{
-  filter: alpha(Opacity=10);
-    opacity: 10;
+.partners-logo:active {
+   opacity: 0.1;
 }
 .adress-title {
     font-size: 18px;
@@ -268,10 +286,55 @@ td.about-table-column1 {
   background-color: #fb565a;
   border: none;
 }
-.service-icon-notebook {
-    background-image: url('../img/notebook.jpg');
-    width: 300px;
-    height: 146px;
+.modal-item input {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: regular;
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+}
+.modal-item span {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+.modal-button{
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    font-weight: medium;
+    vertical-align: middle;
+    text-transform: uppercase; 
+
+  background-color: #fb565a;
+  border: none;
+}
+.social {
+  text-align: left;
+}
+
+.social ul {
+  list-style: none;
+}
+.social-button {
+  color: #e1e1e1;
+}
+.sales-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+.sales-info{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: regular;
+  text-align: center;
+  color: #444444;
 }
 
 
@@ -346,6 +409,39 @@ td.about-table-column1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.name {
+    
+}
 
 
 
