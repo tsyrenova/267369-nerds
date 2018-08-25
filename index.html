@@ -27,6 +27,11 @@
     <main class="container"> 
         <h1 class="visually-hidden">Студия "Нёрдс"</h1>
         <section class="sliders">
+             <div class="controls-container">
+                <button class="slider-button-slide active">Слайд1</button>
+                <button class="slider-button-slide">Слайд2</button>
+                <button class="slider-button-slide">Слайд3</button>
+            </div>
             <div class="slider1">
                 <p class="slider1-title">Долго, дорого, скрупулезно</p>
                 <p class="slider1-normal">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -69,7 +74,6 @@
                 </ul>
             </div>
         </section>
-        
         <section class="about">
             <h2 class="visually-hidden">О нас</h2>
             <div class="about-column1">
@@ -83,7 +87,9 @@
                 </ul>  
             </div>
             <div class="about-column2">
-                <img src="img/color-nerds.jpg" width="360" height="208" alt="nёrds-color">
+                <div class="about-logo">
+                    <img src="img/color-nerds.jpg" width="360" height="208" alt="nёrds-color">
+                </div>
                 <p class="about-bold">С 2004 года любим точность во всем:</p>
                 <table class="about-table">
                     <tr class="about-table-row">
@@ -117,19 +123,20 @@
           </a>
         </section>
         
-        <section class="map">
-            <img src="img/map.jpeg" width="70" height="70" alt="карта">
+        <section class="contact">
                 <div class="adress">
-                <p class="adress-title">Nёrds desing studio</p>
-                <p class="adress-info">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-                <p class="adress-phone">тел. +7(812) 275-75-75</p>    
-                <a class="write-button" href="#_">Напишите нам</a>
-                <!-- Картинка на слайдер будет через CSS -->
+                    <p class="adress-title">Nёrds desing studio</p>
+                    <p class="adress-info">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+                    <p class="adress-phone">тел. +7(812) 275-75-75</p>    
+                    <a class="write-button" href="#_">Напишите нам</a>
+                </div>
+                <div class="map">
+                    <img src="img/map.jpg" width="1440" height="785" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 </div>
         </section> 
         <section class="modal-write">
             <h2>Напишите нам</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="modal-item">
                     <label for="name-field"><span class="name">Ваше имя:</span></label>
                     <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
@@ -140,9 +147,11 @@
                 </p>
                 <p class="modal-item">
                     <label for="message-field"><span class="text">Текст письма:</span></label>
-                    <input type="text" name="message" id="message-field" placeholder="В свободной форме">
+                    <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
                 </p>
+                <a class="modal-button" href="#_">Отправить</a>
             </form>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>       
     </main>
       <footer class="main-footer">
