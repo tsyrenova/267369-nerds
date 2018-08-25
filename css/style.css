@@ -246,7 +246,11 @@ a {
     line-height: 24px;
     font-weight: 400;
     text-align: left;
-    color: #283136; 
+    color: #283136;
+}
+
+.about-column1 ul {
+    list-style: none;
 }
 
 .about-logo {
@@ -413,17 +417,247 @@ td.about-table-column1 {
     color: #444444;
 }
 
+.container h1{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.options-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+.price-value {
+    background-color: #eeeeee;
+    color: #000000;
+    border: none;
+}
+
+.price-value:hover {
+    background-color: #dfdfdf;
+    color: #000000;
+    border: none;
+}
+
+.price-value:active {
+    background-color: #d5d5d5;
+    color: #000000;
+    border: none;
+}
+
+.price-value:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #dbdbdb;
+}
+
+.filter-options {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: left;
+    color: #283136; 
+}
+
+.filter-options:hover {
+    color: #283136;
+}
+
+.filter-options:disabled {
+    color: rgba (40,49,54,0.3);
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(255,255,255,0.3);
+}
+
+.sorting ul{
+    list-style: none;
+}
+.sorting-title a{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sorting-item {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.sorting-item:hover {
+    color: rgba(0, 0, 0, 0.6);    
+}
+
+.sorting-item:focus,
+.sorting-item:active {
+    color: rgba(0, 0, 0, 1);    
+}
+
+
+.sorting-item-current {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000; 
+    text-transform: uppercase;
+}
+
+.sorting-item-current:hover,
+.sorting-item-current:focus,
+.sorting-item-current:active {
+    color: #000000;    
+}
+
+.catalog-list{
+    list-style: none;
+}
+.catalog-item {
+    text-align: center;
+}
+.catalog-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000; 
+    text-transform: uppercase;
+}
+
+.catalog-info{
+    font-size: 16px;
+    line-height: 18x;
+    font-weight: 400;
+    color: #666666; 
+}
 
+.catalog-button {
+    font-size: 16px;
+    line-height: 18x;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    vertical-align: middle;
+    text-transform: uppercase; 
 
+    background-color: #fb565a;
+    border: none;
+}
 
+.catalog-button:hover,
+.catalog-button:focus {
+    background-color: #e74246;
+}
 
+.catalog-button:active {
+    background-color: #d7373b;
+    color: rgba(255,255,255,0.3)
+}
 
+.pagination-list {
+    list-style: none;
+    text-align: center;
+}
 
+.pagination-item a {
+    font-size: 16px;
+    line-height: 18x;
+    font-weight: 500;
+    text-align: center;
+    background-color: #eeeeee;
+    color: #000000;
+    border: none;
+}
 
+.pagination-item a:hover {
+    background-color: #dfdfdf;
+    color: #000000;
+    border: none;
+}
 
+.price-value:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #dbdbdb;
+}
 
+.pagination-item a:active {
+    background-color: #d5d5d5;
+    color: #000000;
+    border: none;
+}
 
+ .pagination-item-current a {
+    font-size: 16px;
+    line-height: 18x;
+    font-weight: 500;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #dbdbdb;
+}
 
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #dbdbdb;
+}
 
 
 
@@ -516,3 +750,23 @@ td.about-table-column1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.price {
+    
+}
