@@ -1,20 +1,48 @@
 body {
  margin: 0;
  padding: 0;
-    
+
  font-family: "Roboto", Arial, sans-serif;
  font-size: 16px;
  line-height: 24px;
  font-weight: 400;
  color: #283136;
-    
+
  background: #ffffff;
- background-repeat: no-repeat;  
+ background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 a {
   text-decoration: none;
 }
+
+
+.main-container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: o 20px;
+    outline: 2px solid yellow;
+}
+.main-navigation {
+    display: flex;
+
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    background-color: #eeeeee;
+}
+
 
 .header-logo:hover,
 .header-logo:focus {
@@ -23,6 +51,11 @@ a {
 
 .header-logo:active {
   opacity: 0.3;
+}
+
+.site-navigation {
+  display: flex;
+  outline: 2px solid red;
 }
 
 .site-navigation,
@@ -36,7 +69,7 @@ a {
 }
 .site-navigation a,
 .basket-navigation a {
-    color: #000000;  
+    color: #000000;
 }
 
 .site-navigation a:hover,
@@ -84,7 +117,7 @@ a {
     color: #ffffff;
     font-weight: 500;
     vertical-align: middle;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 
     background-color: #fb565a;
     border: none;
@@ -100,16 +133,9 @@ a {
     color: rgba(255,255,255,0.3)
 }
 
-.main-navigation {
-    font-size: 16px;
-    line-height: 30px;
-    color: black;
-    background-color: #eeeeee;
-}
-
 .main-header,
 .sliders{
-   background-color: #eeeeee; 
+   background-color: #eeeeee;
 }
 
 .slider1-normal,
@@ -119,9 +145,8 @@ a {
     line-height: 24px;
     font-weight: 400;
     text-align: left;
-    color: #283136; 
+    color: #283136;
 }
-
 
 .service-item h3 {
     font-size: 24px;
@@ -131,6 +156,7 @@ a {
 }
 
 .service-list {
+    display: flex;
     list-style: none;
 }
 
@@ -203,7 +229,7 @@ a {
 }
 
 .service-button3 {
- background-color: #efc84a;
+    background-color: #efc84a;
 }
 
 .service-button3:hover,
@@ -216,11 +242,16 @@ a {
     color: rgba(255,255,255,0.3)
 }
 
+.about .main-container {
+    display: flex;
+    outline: 2px solid brown;
+}
+
 .about-title {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
-    color: #000000; 
+    color: #000000;
 }
 
 .about-info {
@@ -229,7 +260,7 @@ a {
     font-weight: 400;
     font-style: normal;
     text-align: left;
-    color: #283136; 
+    color: #283136;
 }
 
 .about-bold {
@@ -238,7 +269,7 @@ a {
     font-weight: bold;
     text-align: left;
     text-transform: uppercase;
-    color: #000000;   
+    color: #000000;
 }
 
 .about-item {
@@ -287,8 +318,14 @@ td.about-table-column1 {
     padding: 40px 15px;
 }
 
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid orange;
+}
+
 .partners-logo {
-    opacity: 0.20; 
+    opacity: 0.20;
 }
 
 .partners-logo:hover,
@@ -327,11 +364,15 @@ td.about-table-column1 {
     color: #ffffff;
     font-weight: 500;
     vertical-align: middle;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     background-color: #fb565a;
     border: none;
 }
 .map {
+    display: flex;
+    margin: 0 auto;
+    outline: 2px solid magenta;
+
     width: 1440px;
     height: 785px;
     text-align: left;
@@ -361,7 +402,7 @@ td.about-table-column1 {
     color: #ffffff;
     font-weight: 500;
     vertical-align: middle;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     background-color: #fb565a;
     border: none;
 }
@@ -389,6 +430,11 @@ td.about-table-column1 {
     border: 2px solid #000000;
 }
 
+.main-footer {
+    display: flex;
+    outline: 2px solid grey;
+}
+
 .social {
     text-align: left;
 }
@@ -399,7 +445,7 @@ td.about-table-column1 {
 
 .social-button {
     color: #e1e1e1;
-} 
+}
 
 .sales-title {
     font-size: 36px;
@@ -453,7 +499,7 @@ td.about-table-column1 {
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
-    
+
 }
 
 .price-value {
@@ -485,7 +531,7 @@ td.about-table-column1 {
     line-height: 22px;
     font-weight: 400;
     text-align: left;
-    color: #283136; 
+    color: #283136;
 }
 
 .filter-options:hover {
@@ -539,12 +585,12 @@ td.about-table-column1 {
 }
 
 .sorting-item:hover {
-    color: rgba(0, 0, 0, 0.6);    
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .sorting-item:focus,
 .sorting-item:active {
-    color: rgba(0, 0, 0, 1);    
+    color: rgba(0, 0, 0, 1);
 }
 
 
@@ -553,14 +599,14 @@ td.about-table-column1 {
     line-height: 18px;
     font-weight: 400;
     text-align: left;
-    color: #000000; 
+    color: #000000;
     text-transform: uppercase;
 }
 
 .sorting-item-current:hover,
 .sorting-item-current:focus,
 .sorting-item-current:active {
-    color: #000000;    
+    color: #000000;
 }
 
 .catalog-list{
@@ -573,7 +619,7 @@ td.about-table-column1 {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    color: #000000; 
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -581,7 +627,7 @@ td.about-table-column1 {
     font-size: 16px;
     line-height: 18x;
     font-weight: 400;
-    color: #666666; 
+    color: #666666;
 }
 
 .catalog-button {
@@ -592,7 +638,7 @@ td.about-table-column1 {
     color: #ffffff;
     font-weight: 500;
     vertical-align: middle;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 
     background-color: #fb565a;
     border: none;
@@ -766,7 +812,3 @@ td.about-table-column1 {
 
 
 
-
-.price {
-    
-}
