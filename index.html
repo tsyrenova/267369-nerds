@@ -13,22 +13,25 @@
               <a class="header-logo" href="#_">
                   <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотоип Нёрдс">
               </a>
-              <ul class="site-navigation">
+              <div class="main-wrapper">
+                <ul class="site-navigation">
                   <li><a href="studio.html">Студия</a></li>
                   <li><a href="clients.html">Клиенты</a></li>
                   <li><a href="magazine.html">Магазин</a></li>
                   <li><a href="contacs.html">Контакты</a></li>
-              </ul>
-              <ul class="basket-navigation">
-                  <li> <a class="basket.html">Корзина</a></li>
-              </ul>
+                </ul>
+                <ul class="basket-navigation">
+                  <li><a class="basket" href="basket.html">Корзина</a></li>
+                </ul>
+              </div>
           </nav>
       </header>
     <main class="container">
         <h1 class="visually-hidden">Студия "Нёрдс"</h1>
+
         <section class="sliders">
             <div class=" main-container">
-              <div class="controls-container">
+             <div class="controls-container">
                 <button class="slider-button-slide active">Слайд1</button>
                 <button class="slider-button-slide">Слайд2</button>
                 <button class="slider-button-slide">Слайд3</button>
@@ -76,6 +79,7 @@
                 </ul>
               </div>
         </section>
+
         <section class="about">
             <h2 class="visually-hidden">О нас</h2>
               <div class="main-container">
@@ -111,41 +115,36 @@
         </section>
 
         <section class="partners main-container">
-        <h2 class="visually-hidden">Партнеры</h2>
-          <a class="partners-logo" href="https://htmlacademy.ru/">
+          <h2 class="visually-hidden">Партнеры</h2>
+            <a class="partners-logo" href="https://htmlacademy.ru/">
               <img src="img/logo-htmlacademy.png" width="260" height="180" alt="html академия">
-          </a>
-          <a class="partners-logo" href="http://barbershop-borodinski.webflow.io/">
+            </a>
+            <a class="partners-logo" href="http://barbershop-borodinski.webflow.io/">
               <img src="img/logo-borodinski.png" width="260" height="180" alt="барбершоп бородинский">
-          </a>
-          <a class="partners-logo" href="http://anna-v.github.io/pink/">
+            </a>
+            <a class="partners-logo" href="http://anna-v.github.io/pink/">
             <img src="img/logo-pink.png" width="260" height="180" alt=" Очки pink">
-          </a>
+            </a>
             <a class="partners-logo" href="https://tyalomishka.herokuapp.com/">
             <img src="img/logo_mishka.png" width="260" height="180" alt="mishka игрушка">
-          </a>
-          <a class="partners-logo" href="http://anna-v.github.io/pink/">
-            <img src="img/logo-pink.png" width="260" height="180" alt=" Очки pink">
-          </a>
-            <a class="partners-logo" href="https://tyalomishka.herokuapp.com/">
-            <img src="img/logo_mishka.png" width="260" height="180" alt="mishka игрушка">
-          </a>
+            </a>
         </section>
 
         <section class="contact">
-                <div class="adress">
-                    <p class="adress-title">Nёrds desing studio</p>
-                    <p class="adress-info">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-                    <p class="adress-phone">тел. +7(812) 275-75-75</p>
-                    <a class="write-button" href="#_">Напишите нам</a>
-                </div>
-                <div class="map">
+          <div class="adress">
+            <p class="adress-title">Nёrds desing studio</p>
+            <p class="adress-info">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+            <p class="adress-phone">тел. +7(812) 275-75-75</p>
+            <a class="write-button" href="#write">Напишите нам</a>
+          </div>
+          <div class="map">
                     <img src="img/map.jpg" width="1440" height="785" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                </div>
+          </div>
         </section>
     </main>
-      <footer class="main-footer main-container">
-          <div class="social">
+
+    <footer class="main-footer main-container">
+      <div class="social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -153,28 +152,29 @@
         </ul>
       </div>
       <div class="sales">
-                <p class="sales-title">Давайте дружить, это выгодно!</p>
-                <p class="sales-info">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="sales-title">Давайте дружить, это выгодно!</p>
+        <p class="sales-info">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      </footer>
-      <section class="modal-write">
-            <h2>Напишите нам</h2>
-            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="modal-item">
-                    <label for="name-field"><span class="name">Ваше имя:</span></label>
-                    <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-                </p>
-                <p class="modal-item">
-                    <label for="email-field"><span class="email">Ваш e-mail:</span></label>
-                    <input type="text" name="email" id="email-field" placeholder="email@example.com">
-                </p>
-                <p class="modal-item">
-                    <label for="message-field"><span class="text">Текст письма:</span></label>
-                    <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
-                </p>
-                <a class="modal-button" href="#_">Отправить</a>
-            </form>
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
+    </footer>
+
+    <section class="modal-write" id="write">
+      <h2>Напишите нам</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-item">
+            <label for="name-field"><span class="name">Ваше имя:</span></label>
+              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-item">
+            <label for="email-field"><span class="email">Ваш e-mail:</span></label>
+              <input type="text" name="email" id="email-field" placeholder="email@example.com">
+          </p>
+          <p class="modal-item">
+            <label for="message-field"><span class="text">Текст письма:</span></label>
+            <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+          </p>
+          <a class="modal-button" href="#_">Отправить</a>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
