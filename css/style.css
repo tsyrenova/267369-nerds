@@ -552,6 +552,23 @@ table.about-table-column {
    opacity: 0.1;
 }
 
+.contact {
+  position: relative;
+}
+
+.map {
+    position: relative;
+}
+
+.contact iframe {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 416px;
+  background: #e9e5dc url("") ;
+  background: #e9e5dc url("../img/map.jpg") no-repeat center center;
+}
+
 .adress-title {
     font-size: 18px;
     line-height: 30px;
@@ -581,17 +598,6 @@ table.about-table-column {
     vertical-align: middle;
     text-transform: uppercase;
     background-color: #fb565a;
-    border: none;
-}
-.map {
-    display: flex;
-    margin: 0 auto;
-    outline: 2px solid magenta;
-
-    width: 1440px;
-    height: 785px;
-    text-align: left;
-    background-color: #f1efe8;
     border: none;
 }
 
@@ -650,11 +656,11 @@ table.about-table-column {
     left: 30px;
 }
 
-.social-button:hover a{
+.social-button:hover {
   background-color: #e74246;
 }
 
-.social-button:active a {
+.social-button:active {
   background-color: #d7373b;
   background-repeat: no-repeat;
   orphans: 0.3;
