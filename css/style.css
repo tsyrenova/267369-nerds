@@ -45,7 +45,7 @@ a {
 }
 
 .header-logo {
-    align-self: flex-star;
+    align-self: flex-start;
     margin-top: 49px;
     margin-right: 202px;
 }
@@ -494,6 +494,11 @@ a {
     margin-bottom: 42px;
 }
 
+.about-table {
+  outline: 1px solid red;
+  padding-left: 50px;
+}
+
 table.about-table-column {
     border-collapse: collapse;
 }
@@ -517,6 +522,7 @@ table.about-table-column {
     text-align: left;
     color: #283136;
     width: 95px;
+    padding-top: 20px;
 }
 
 .about-column2 {
@@ -591,6 +597,7 @@ table.about-table-column {
 
 .main-footer {
     display: flex;
+    justify-content: space-between;
     outline: 2px solid grey;
 }
 
@@ -598,13 +605,67 @@ table.about-table-column {
     text-align: left;
 }
 
+.social-button {
+  height: 79px;
+  width: 79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  margin: 12px;
+}
+
+.social-button-vk::after {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  content: '';
+  height: 15px;
+  width: 26px;
+  position: absolute;
+  top: 33px;
+  left: 27px;
+}
+
+.social-button-fb::after {
+    background-image: url("../img/fb-icon.svg");
+    background-repeat: no-repeat;
+    content: '';
+    height: 22px;
+    width: 12px;
+    position: absolute;
+    top: 27px;
+    left: 34px;
+}
+
+.social-button-in::after {
+    background-image: url("../img/insta-icon.svg");
+    background-repeat: no-repeat;
+    content: '';
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    top: 29px;
+    left: 30px;
+}
+
+.social-button:hover a{
+  background-color: #e74246;
+}
+
+.social-button:active a {
+  background-color: #d7373b;
+  background-repeat: no-repeat;
+  orphans: 0.3;
+}
+
+}
 .social ul {
     list-style: none;
 }
 
-.social-button {
-    color: #e1e1e1;
-}
+
 
 .sales-title {
     font-size: 36px;
@@ -621,6 +682,8 @@ table.about-table-column {
     text-align: center;
     color: #444444;
 }
+
+
 
 .modal-item input {
     font: inherit;
