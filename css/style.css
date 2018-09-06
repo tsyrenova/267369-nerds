@@ -27,6 +27,7 @@ a {
   text-decoration: none;
 }
 
+
 .main-container {
     width: 1160px;
     margin: 0 auto;
@@ -44,8 +45,8 @@ a {
 }
 
 .header-logo {
-    align-self: flex-end;
-    margin-bottom: 18px;
+    align-self: flex-star;
+    margin-top: 49px;
     margin-right: 202px;
 }
 
@@ -82,17 +83,27 @@ a {
     color: #000000;
     text-align: left;
     list-style: none;
+    margin: 0;
 }
 .site-navigation a,
 .basket-navigation a {
     display: block;
     color: #000000;
     padding-right: 45px;
-    padding-top: 81px;
-    padding-bottom: 35px;
+    padding-top: 74px;
+    padding-bottom: 20px;
 }
 
-.basket-navigation .basket {
+.basket-navigation a {
+    padding-right: 0;
+}
+
+.site-navigation li:nth-child(2) {
+    padding-right: 3px;
+
+}
+
+.basket {
     position: relative;
     padding-left: 50px;
 }
@@ -101,7 +112,7 @@ a {
   content: "";
   position: absolute;
   top: 82px;
-  left: 24px;
+  left: 10px;
   width: 15px;
   height: 15px;
 
@@ -133,31 +144,44 @@ a {
     color: rgba(0,0,0,0.3);
 }
 
-.slider1-title,
-.slider2-title,
-.slider3-title{
+.slider-title {
+    max-width: 600px;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
     color: #000000;
     text-align: left;
+
+    margin: 0;
+    margin-bottom: 27px;
 }
 
-.service-item h3{
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
+.slider-normal {
+    max-width: 430px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: #283136;
+
+    margin: 0;
+    margin-bottom: 38px;
 }
 
 .slider-button{
-    font: inherit;
-    text-align: center;
+    display: block;
+    width: 240px;
+    padding: 16px 0;
+
+    font-size: 16px;
+    line-height: 18px;
     color: #ffffff;
-    font-weight: 500;
-    vertical-align: middle;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
 
     background-color: #fb565a;
+    border-radius: 3px;
     border: none;
 }
 
@@ -169,33 +193,119 @@ a {
 .slider-button:active {
     background-color: #d7373b;
     color: rgba(255,255,255,0.3)
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.main-header,
-.sliders{
-   background-color: #eeeeee;
+.sliders .main-container {
+    display: block;
 }
 
-.slider1-normal,
-.slider2-normal,
-.slider3-normal {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: left;
-    color: #283136;
+
+.sliders {
+    position: relative;
+    background-color: #eeeeee;
 }
 
-.service-item h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
+.controls-container {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+
+    width: 160px;
+    height: 18px;
+
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
 }
 
+.slider-button-slide {
+    position: relative;
+
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    margin: 8px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.slider-button-slide.active::before {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+
+
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+}
+
+.slider {
+    display: none;
+    margin: 0;
+    padding: 67px 0 80px 0;
+    background-position: 94% 8px;
+    background-repeat: no-repeat;
+}
+
+.slider.active {
+    display: block;
+}
+
+.slider.active {
+    background-image: url("../img/slide1.png");
+}
+
+.slider {
+    background-image: url("../img/slide2.png");
+}
+
+.slider {
+    background-image: url("../img/slide3.png");
+}
+
+.service {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
 .service-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.service-item {
+    width: 300px;
+}
+
+.service-item:nth-child(1) {
+    margin-right: 100px;
+}
+
+.service-item:nth-child(2) {
+    margin-right: 100px;
+}
+
+.service-item h3{
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .service-item p {
@@ -204,6 +314,9 @@ a {
     font-weight: 400;
     text-align: left;
     color: #283136;
+    width: 280px;
+    margin-top: 17px;
+    margin-bottom: 32px;
 }
 
 .service-icon {
@@ -211,6 +324,7 @@ a {
     background-repeat: no-repeat;
     width: 300px;
     height: 146px;
+   margin-bottom: 25px;
 }
 
 .service-icon-notebook {
@@ -229,14 +343,23 @@ a {
 }
 .service-button1,
 .service-button2,
-.service-button3 {g
-    font: inherit;
+.service-button3 {
     text-align: center;
     color: #ffffff;
     font-weight: 500;
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
+    display: block;
+    width: 160px;
+    padding: 16px 0;
+
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 3px;
 }
 
 .service-button1 {
@@ -280,9 +403,27 @@ a {
     color: rgba(255,255,255,0.3)
 }
 
+.about {
+  display: flex;
+  margin: 0;
+  padding-top: 40px;
+  height: 525px;
+}
+
 .about .main-container {
     display: flex;
     outline: 2px solid brown;
+    position: relative;
+}
+
+.about .main-container::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    border-top: 2px solid #eeeeee;
+    left: 0px;
+    top: -40px;
 }
 
 .about-title {
@@ -290,6 +431,8 @@ a {
     font-weight: 500;
     line-height: 45px;
     color: #000000;
+    margin: 0px 2px;
+    padding: 36px 0;
 }
 
 .about-info {
@@ -299,6 +442,9 @@ a {
     font-style: normal;
     text-align: left;
     color: #283136;
+    width: 616px;
+    margin: -2px 0;
+    padding: 0 1px;
 }
 
 .about-bold {
@@ -308,6 +454,7 @@ a {
     text-align: left;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 40px;
 }
 
 .about-item {
@@ -316,10 +463,17 @@ a {
     font-weight: 400;
     text-align: left;
     color: #283136;
+    padding-left: 35px;
+    margin-bottom: 25px;
 }
 
+.about-item:nth-child(3) {
+    margin-bottom: 0px;
+}
 .about-column1 ul {
     list-style: none;
+    margin: 0 2px;
+    padding: 8px 0;
 }
 
 .about-logo {
@@ -328,23 +482,33 @@ a {
     text-align: left;
     background-color: #42b770;
     border: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 33px;
+    margin-top: 2px;
+}
+
+.about-bold:nth-child(2){
+    margin-top: 37px;
+    margin-left: 50px;
+    margin-bottom: 42px;
 }
 
 table.about-table-column {
     border-collapse: collapse;
 }
 
-td.about-table-column {
+.about-table-column {
     padding: 0px;
     margin: 0px;
     font-size: 45px;
     line-height: 10px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     color: #000000;
 }
 
-td.about-table-column1 {
+.about-table-column1 {
     padding: 0px;
     margin: 0px;
     font-size: 16px;
@@ -352,8 +516,15 @@ td.about-table-column1 {
     font-weight: 400;
     text-align: left;
     color: #283136;
-    width: 100px;
-    padding: 40px 15px;
+    width: 95px;
+}
+
+.about-column2 {
+  outline: 2px solid black;
+}
+
+.about-table-column:nth-child(3) {
+  padding: 0;
 }
 
 .partners {
