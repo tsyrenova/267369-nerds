@@ -100,22 +100,49 @@
                     <img src="img/color-nerds.jpg" width="360" height="208" alt="nёrds-color">
                 </div>
                 <p class="about-bold">С 2004 года любим точность во всем:</p>
-                <table class="about-table">
-                    <tr class="about-table-row">
-                        <td class="about-table-column">146<sup>%</sup></td>
-                        <td class="about-table-column">100<sup>%</sup></td>
-                        <td class="about-table-column">50<sup>%</sup></td>
+
+                <table>
+                    <tr class="about-table">
+                        <td class="column-top">146<sup>%</sup></td>
+                        <td class="column-top">100<sup>%</sup></td>
+                        <td class="column-top">50<sup>%</sup></td>
                     </tr>
-                    <tr class="about-table-row1">
-                        <td class="about-table-column1">Уровень самоотдачи</td>
-                        <td class="about-table-column1">Соблюдение сроков</td>
-                        <td class="about-table-column1">Минимальная предоплата</td>
+                    <tr>
+                        <td class="column-buttom">Уровень самоотдачи</td>
+                        <td class="column-buttom">Соблюдение сроков</td>
+                        <td class="column-buttom">Минимальная предоплата</td>
                     </tr>
                 </table>
               </div>
             </div>
         </section>
+        <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
+          <ul class="main-container">
+              <li class="partners-item">
+                <a class="partners-logo" href="#target">
+                  <img src="img/logo-htmlacademy.png" width="260" height="180" alt="html академия">
+                </a>
+              </li>
+              <li class="partners-item">
+              <a class="partners-logo" href="#target">
+                  <img src="img/logo-borodinski.png" width="260" height="180" alt="барбершоп бородинский">
+                </a>
+              </li>
+              <li class="partners-item">
+              <a class="partners-logo" href="#target">
+                  <img src="img/logo-pink.png" width="260" height="180" alt="Pink">
+                </a>
+              </li>
+              <li class="partners-item">
+              <a class="partners-logo" href="#target">
+                  <img src="img/logo_mishka.png" width="260" height="180" alt="Mishka игрушка">
+                </a>
+              </li>
+          </ul>
+      </section>
 
+<!--
         <section class="partners main-container">
           <h2 class="visually-hidden">Партнеры</h2>
             <a class="partners-logo" href="https://htmlacademy.ru/">
@@ -131,23 +158,24 @@
             <img src="img/logo_mishka.png" width="260" height="180" alt="mishka игрушка">
             </a>
         </section>
+-->
 
-        <section class="contact">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615906596!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462288580233"
+        <section class="contacts">
+          <h2 class="visually-hidden">Мы находимся тут</h2>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615906596!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462288580233"
           style="border:0" allowfullscreen>
           </iframe>
-          <div class="adress">
-            <p class="adress-title">Nёrds desing studio</p>
-            <p class="adress-info">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-            <p class="adress-phone">тел. +7(812) 275-75-75</p>
-            <a class="write-button" href="#write">Напишите нам</a>
+          <div class="contact">
+              <p class="contact-title">Nёrds desing studio</p>
+              <p class="contact-info">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+              <p class="contact-phone">тел.+7(812) 275-75-75</p>
+              <a class="write-button button" href="#">Напишите нам</a>
           </div>
-          <div class="map">
-                    <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <div class="map-picture">
           </div>
         </section>
-    </main>
 
+    </main>
 
     <footer class="main-footer main-container">
       <section class="social">
@@ -165,24 +193,25 @@
       </section>
     </footer>
 
-    <section class="modal-write" id="write">
-      <h2>Напишите нам</h2>
-        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="modal-item">
-            <label for="name-field"><span class="name">Ваше имя:</span></label>
-              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-          </p>
-          <p class="modal-item">
-            <label for="email-field"><span class="email">Ваш e-mail:</span></label>
-              <input type="text" name="email" id="email-field" placeholder="email@example.com">
-          </p>
-          <p class="modal-item">
-            <label for="message-field"><span class="text">Текст письма:</span></label>
-            <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
-          </p>
-          <a class="modal-button" href="#_">Отправить</a>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
+    <section class="modal">
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <h2 class="write-us">Напишите нам</h2>
+        <div class="modal-username">
+          <label for="username-field">Ваше имя:</label><br>
+          <input type="text" name="username" id="username-field" placeholder="Имя Фамилия">
+        </div>
+        <div class="modal-email">
+          <label class="email-field">Ваш e-mail:</label><br>
+          <input type="text" name="e-mail" id="email-field" placeholder="email@example.com">
+        </div>
+        <div class="modal-message">
+          <label for="message-field">Текст письма:</label><br>
+          <textarea name="message" rows="8" cols="80" id="message-field" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="button-close" type="button">Закрыть</button>
     </section>
+    <script src="js/modal.js"></script>
   </body>
 </html>
