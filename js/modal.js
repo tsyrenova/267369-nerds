@@ -1,6 +1,6 @@
 var write = document.querySelector(".write-button"),
   modal = document.querySelector(".modal"),
-  close = document.querySelector(".button-close"),
+  close = document.querySelector(".modal-button-close"),
   formModal = document.querySelector(".modal-form"),
   username = document.querySelector("[name=username]"),
   email = document.querySelector("[name=email]"),
