@@ -41,10 +41,12 @@ a {
 }
 
 .main-container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
+
   padding-right: 10px;
   padding-left: 10px;
+  box-sizing: border-box;
 
 }
 .main-navigation {
@@ -540,8 +542,8 @@ a {
   border: none;
   padding: 0;
   margin: 0;
-  margin-left: 33px;
-  margin-top: 2px;
+  margin-left: 54px;
+  margin-top: 0px;
 }
 
 .about-bold:nth-child(2){
@@ -738,13 +740,11 @@ a {
 .main-footer {
   display: flex;
   justify-content:flex-start;
-  width: 1443px;
-  height: 217px;
+  padding-bottom: 92px;
 }
 
 .social {
   text-align: left;
-  padding-left: 87px;
   padding-top: 66px;
 }
 
@@ -752,7 +752,6 @@ a {
   text-align: center;
   vertical-align: middle;
   position: relative;
-
 }
 
 .social-button:hover,
@@ -1522,7 +1521,7 @@ display: flex;
   font-weight: 400;
   color: #666666;
   margin: 0 auto;
-  max-width: 240px;
+  width: 180px;
   padding-bottom: 32px;
   padding-left: 5px;
 }
